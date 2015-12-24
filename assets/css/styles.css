@@ -1,3 +1,16 @@
+.icon-eyeglass, .icon-libsass {
+  background: url(/spritemaps/icon-sprite-map.png) no-repeat; }
+
+.icon-eyeglass {
+  background-position: 0px 0px;
+  width: 400px;
+  height: 200px; }
+
+.icon-libsass {
+  background-position: -405px 0px;
+  width: 400px;
+  height: 200px; }
+
 body {
   background: #111;
   color: #fff; }
@@ -18,9 +31,5 @@ a {
   display: block;
   width: 400px;
   height: 200px; }
-  a.icon-libsass {
-    background-image: url(../images/icons/libsass.png); }
-  a.icon-eyeglass {
-    background-image: url(../images/icons/eyeglass.png); }
 
 /*# sourceMappingURL=styles.css.map */

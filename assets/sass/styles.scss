@@ -43,11 +43,4 @@ a {
   display: block;
   width: $width;
   height: 200px;
-
-  &.icon-libsass {
-    background-image: url(../images/icons/libsass.png);
-  }
-  &.icon-eyeglass {
-    background-image: url(../images/icons/eyeglass.png);
-  }
 }
