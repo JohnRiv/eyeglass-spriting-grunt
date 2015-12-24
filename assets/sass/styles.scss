@@ -1,0 +1,33 @@
+$width: 400px;
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  width: $width;
+}
+
+li {
+  padding: 0;
+  margin: 20px;
+  list-style-type: none;
+}
+
+a {
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  width: $width;
+  height: 200px;
+
+  &.icon-libsass {
+    background-image: url(../images/icons/libsass.png);
+  }
+  &.icon-eyeglass {
+    background-image: url(../images/icons/eyeglass.png);
+  }
+}

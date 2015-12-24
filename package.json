@@ -1,0 +1,25 @@
+{
+  "name": "eyeglass-spriting-grunt",
+  "version": "1.0.0",
+  "description": "Example project using eyeglass, eyeglass-spriting, and grunt-sass",
+  "private": true,
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnRiv/eyeglass-spriting-grunt.git"
+  },
+  "keywords": [
+    "eyeglass-spriting",
+    "grunt-sass"
+  ],
+  "author": "John Riviello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnRiv/eyeglass-spriting-grunt/issues"
+  },
+  "homepage": "https://github.com/JohnRiv/eyeglass-spriting-grunt#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-sass": "^1.1.0"
+  }
+}
