@@ -7,6 +7,22 @@ module.exports = function(grunt) {
     sourceMap: true
   };
 
+  var rootDir = __dirname;
+  var assetsDir = path.join(rootDir, "assets");
+
+  options.eyeglass = {
+    root: rootDir,
+    buildDir: path.join(assetsDir, "images"),
+    assets: {
+      sources: [{
+        directory: assetsDir,
+        globOpts: {
+          ignore: ["**/*.js", "**/*.scss"]
+        }
+      }]
+    }
+  };
+
   grunt.initConfig({
     sass: {
       options: eyeglass(options),
