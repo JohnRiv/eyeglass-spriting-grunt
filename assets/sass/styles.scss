@@ -1,5 +1,23 @@
 @import "spriting";
 
+@import "assets";
+
+$icon-sprite-map: sprite-map('icon-sprite-map',
+                              sprite-layout(horizontal, (spacing: 5px, alignment: bottom)),
+                             'images/icons/*');
+
+%icon-bg {
+  @include sprite-background($icon-sprite-map);
+}
+
+@each $icon in sprite-list($icon-sprite-map) {
+  .icon-#{sprite-identifier($icon-sprite-map, $icon)} {
+    @extend %icon-bg;
+    @include sprite-position($icon-sprite-map, $icon);
+    @include sprite-dimensions($icon-sprite-map, $icon);
+  }
+}
+
 $width: 400px;
 
 body {
