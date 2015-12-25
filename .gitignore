@@ -28,3 +28,6 @@ node_modules
 
 # eyeglass
 .eyeglass_cache
+
+# OSX
+.DS_Store

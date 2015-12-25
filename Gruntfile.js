@@ -3,29 +3,23 @@ module.exports = function(grunt) {
   var path = require("path");
   var eyeglass = require("eyeglass");
 
-  var options = {
-    sourceMap: true
-  };
-
-  var rootDir = __dirname;
-  var assetsDir = path.join(rootDir, "assets");
-
-  options.eyeglass = {
-    root: rootDir,
-    buildDir: path.join(assetsDir, "images"),
-    assets: {
-      sources: [{
-        directory: assetsDir,
-        globOpts: {
-          ignore: ["**/*.js", "**/*.scss"]
-        }
-      }]
-    }
-  };
+  var assetsDir = path.join(__dirname, "assets");
 
   grunt.initConfig({
     sass: {
-      options: eyeglass(options),
+      options: eyeglass({
+        sourceMap: true,
+        eyeglass: {
+          buildDir: path.join(assetsDir, "images"),
+          httpRoot: '../images',
+          assets: {
+            sources: [{
+              directory: assetsDir,
+              pattern: "images/**/*.png"
+            }]
+          }
+        }
+      }),
       dist: {
         files: [{
           expand: true,
