@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/JohnRiv/eyeglass-spriting-grunt#readme",
   "devDependencies": {
-    "eyeglass": "^0.8.0",
+    "eyeglass": "eoneill/eyeglass#3b25240",
     "eyeglass-spriting": "sass-eyeglass/eyeglass-spriting#ac9a092",
     "grunt": "^0.4.5",
     "grunt-sass": "^1.1.0"
