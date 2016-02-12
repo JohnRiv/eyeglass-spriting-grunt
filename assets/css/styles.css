@@ -11,19 +11,25 @@
   width: 400px;
   height: 200px; }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 body {
-  background: #111;
+  background-color: #111;
+  background-image: -webkit-linear-gradient(#111, #666);
+  background-image: linear-gradient(#111, #666);
   color: #fff; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
 
 ul {
   margin: 0 auto;
-  padding: 0;
   width: 400px; }
-
-li {
-  padding: 0;
-  margin: 20px;
-  list-style-type: none; }
 
 a {
   text-indent: -9999px;

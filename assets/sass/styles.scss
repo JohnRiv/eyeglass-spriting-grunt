@@ -20,21 +20,26 @@ $icon-sprite-map: sprite-map('icon-sprite-map',
 
 $width: 400px;
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: #111;
+  @include linear-gradient(#111, #666);
   color: #fff;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 ul {
   margin: 0 auto;
-  padding: 0;
   width: $width;
-}
-
-li {
-  padding: 0;
-  margin: 20px;
-  list-style-type: none;
 }
 
 a {
