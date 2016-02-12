@@ -9,6 +9,9 @@ module.exports = function(grunt) {
     sass: {
       options: eyeglass({
         sourceMap: true,
+        includePaths: [
+          path.join(__dirname, 'node_modules', 'include-media','dist')
+        ],
         eyeglass: {
           buildDir: path.join(assetsDir, "images"),
           httpRoot: '../images',

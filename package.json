@@ -23,6 +23,7 @@
     "eyeglass": "eoneill/eyeglass#49e579c",
     "eyeglass-spriting": "sass-eyeglass/eyeglass-spriting#ac9a092",
     "grunt": "^0.4.5",
-    "grunt-sass": "^1.1.0"
+    "grunt-sass": "^1.1.0",
+    "include-media": "^1.4.2"
   }
 }
