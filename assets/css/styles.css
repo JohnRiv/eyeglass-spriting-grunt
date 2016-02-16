@@ -22,6 +22,11 @@ body {
   background-image: linear-gradient(#111, #666);
   color: #fff; }
 
+@media (min-width: 321px) and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: #fff; } }
+
 ul, li {
   padding: 0;
   margin: 0;

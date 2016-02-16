@@ -1,6 +1,7 @@
 @import "spriting";
 @import "assets";
 @import "bourbon";
+@import "include-media";
 
 $icon-sprite-map: sprite-map('icon-sprite-map',
                               sprite-layout(horizontal, (spacing: 5px, alignment: bottom)),
